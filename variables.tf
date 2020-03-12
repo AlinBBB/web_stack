@@ -23,3 +23,4 @@ variable "instance_type" {
 variable "owner_tag" {
   default = ["team1", "team2"]
 }
+
