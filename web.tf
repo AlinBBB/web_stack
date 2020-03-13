@@ -16,7 +16,7 @@ resource "aws_instance" "web" {
   subnet_id                   = module.vpc_basic.public_subnet_id
   private_ip                  = var.instance_ips[count.index]
   associate_public_ip_address = true
-  user_data                   = file("files/web_bootstrap.sh")
+  user_data                   = file("web_bootstrap.sh")
 
   vpc_security_group_ids = [aws_security_group.web_host_sg.id, ]
 
