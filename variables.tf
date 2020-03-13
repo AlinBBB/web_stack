@@ -24,3 +24,8 @@ variable "owner_tag" {
   default = ["team1", "team2"]
 }
 
+variable "instance_ips" {
+    type = list(string)
+    description = "The IPs to use for our instance"
+    default = ["10.0.1.20", "10.0.1.21"]
+}

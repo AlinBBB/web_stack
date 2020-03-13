@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"vpc_basic","Source":"git@github.com:AlinBBB/tf_vpc","Dir":".terraform/modules/vpc_basic"}]}
+{"Modules":[{"Key":"vpc_basic","Source":"github.com/AlinBBB/tf_vpc","Dir":".terraform/modules/vpc_basic"},{"Key":"","Source":"","Dir":"."}]}
