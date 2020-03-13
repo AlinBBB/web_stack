@@ -12,7 +12,7 @@ module "vpc_basic" {
 resource "aws_instance" "web" {
   ami                         = var.ami[var.region]
   instance_type               = var.instance_type
-  key_name                    = var.key_name
+  #key_name                    = var.key_name
   subnet_id                   = module.vpc_basic.public_subnet_id
   private_ip                  = var.instance_ips[count.index]
   associate_public_ip_address = true
